@@ -8,7 +8,7 @@ int main() {
     scanf("%s", name);
 
  
-    printf("Congrats %s, You Learnt How To Use GitHub!\n", name);
+    printf("Congrats %s, You Learnt How To Use Github!\n", name);
 
     return 0;
 }
