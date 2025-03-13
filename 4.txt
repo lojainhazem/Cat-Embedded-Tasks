@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+#define USERNAME "admin"
+#define PASSWORD "1234"
+
+void login() {
+    char user[20], pass[20];
+
+    printf("Enter username: ");
+    scanf("%s", user);
+    printf("Enter password: ");
+    scanf("%s", pass);
+
+    if (strcmp(user, USERNAME) == 0 && strcmp(pass, PASSWORD) == 0) {
+        printf("Login successful! Welcome, %s.\n", user);
+    } else {
+        printf("Incorrect username or password. Try again.\n");
+    }
+}
+
+int main() {
+    login();
+    return 0;
+}
